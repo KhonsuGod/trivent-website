@@ -1,0 +1,75 @@
+/* TRIVENT semantic design tokens — Bold Black Corporate Editorial.
+   Dark and light themes are both intentionally designed; light is not an inversion. */
+
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --surface-primary: #0b0b0c;
+  --surface-secondary: #111114;
+  --surface-tertiary: #17171b;
+  --surface-inverse: #f3eee1;
+  --surface-navy: #0c2340;
+  --surface-navy-deep: #081728;
+
+  --text-primary: #f3eee1;
+  --text-muted: #a8a29a;
+  --text-faint: #6f6a61;
+  --text-inverse: #12120f;
+  --text-on-navy: #f3eee1;
+
+  --accent: #e7b93b;
+  --accent-soft: #f0d47c;
+  --accent-deep: #9a7414;
+  --accent-ink: #1a1204;
+
+  --border: rgba(231, 185, 59, 0.28);
+  --border-soft: rgba(243, 238, 225, 0.14);
+  --border-faint: rgba(243, 238, 225, 0.07);
+
+  --panel-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+  --header-bg: rgba(11, 11, 12, 0.86);
+  --overlay-bg: rgba(8, 8, 9, 0.97);
+  --field-bg: rgba(243, 238, 225, 0.04);
+  --gold-glow: rgba(231, 185, 59, 0.12);
+
+  --font-display: 'Oswald', 'Arial Narrow', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif-accent: Georgia, 'Times New Roman', serif;
+
+  --container: min(1200px, calc(100vw - 48px));
+  --header-h: 76px;
+  --rule-thick: 3px;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --surface-primary: #f5f1e4;
+  --surface-secondary: #ede6d1;
+  --surface-tertiary: #fbf8ee;
+  --surface-inverse: #101014;
+  --surface-navy: #0c2340;
+  --surface-navy-deep: #081728;
+
+  --text-primary: #171510;
+  --text-muted: #5d574b;
+  --text-faint: #8d8674;
+  --text-inverse: #f5f1e4;
+  --text-on-navy: #f5f1e4;
+
+  --accent: #a1730a;
+  --accent-soft: #c6961a;
+  --accent-deep: #7c5a06;
+  --accent-ink: #fff7e0;
+
+  --border: rgba(122, 90, 6, 0.45);
+  --border-soft: rgba(23, 21, 16, 0.16);
+  --border-faint: rgba(23, 21, 16, 0.08);
+
+  --panel-shadow: 0 24px 70px rgba(23, 21, 16, 0.16);
+  --header-bg: rgba(245, 241, 228, 0.9);
+  --overlay-bg: rgba(245, 241, 228, 0.98);
+  --field-bg: rgba(23, 21, 16, 0.04);
+  --gold-glow: rgba(166, 115, 10, 0.1);
+}
