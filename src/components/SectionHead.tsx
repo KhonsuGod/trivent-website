@@ -9,9 +9,12 @@ type SectionHeadProps = {
   lede?: string;
   wide?: boolean;
   backToHome?: boolean;
+  /** Page-level heroes render an H1; section headers render H2. */
+  level?: 1 | 2;
 };
 
-export function SectionHead({ index, eyebrow, title, lede, wide = false, backToHome = false }: SectionHeadProps) {
+export function SectionHead({ index, eyebrow, title, lede, wide = false, backToHome = false, level = 2 }: SectionHeadProps) {
+  const Heading = level === 1 ? 'h1' : 'h2';
   return (
     <div className={`section-head${wide ? ' section-head--wide' : ''}`}>
       <Reveal>
@@ -21,12 +24,12 @@ export function SectionHead({ index, eyebrow, title, lede, wide = false, backToH
           </Link>
         ) : null}
         <p className="eyebrow">{eyebrow}</p>
-        <h2 style={{ marginTop: 14 }}>
+        <Heading style={{ marginTop: 14 }}>
           <span className="sec-index" aria-hidden="true" style={{ display: 'block', marginBottom: 6 }}>
             {index}
           </span>
           {title}
-        </h2>
+        </Heading>
       </Reveal>
       {lede ? (
         <Reveal delay={0.08}>

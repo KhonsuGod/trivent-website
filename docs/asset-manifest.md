@@ -2,16 +2,27 @@
 
 | Source asset | Production file | Website usage | Processing |
 | --- | --- | --- | --- |
-| 02-HERO/desktop-landscape/1787798879559.jpg | hero-facilitation-desktop.webp | Home hero (desktop art direction), brand-intro video poster fallback | Auto-oriented, resized to 1800px, WebP q82, metadata stripped |
+| 02-HERO/desktop-landscape/founder-speaking-01.jpg | hero-team-building-desktop.webp | Home hero, desktop cinematic stage | Auto-oriented, resized to 1800px, WebP q82, metadata stripped |
+| 02-HERO/desktop-landscape/1787798879559.jpg | hero-facilitation-desktop.webp | Secondary facilitation frame (About secondary use) | Auto-oriented, resized to 1800px, WebP q82, metadata stripped |
 | 02-HERO/mobile-portrait/1787797157939.jpg | hero-facilitation-mobile.webp | Home hero (mobile art direction) | Auto-oriented, resized to 900px, WebP q82, metadata stripped |
 | 03-FOUNDER/portrait/chandra.jpg | founder-principal-consultant.webp | Founder profile portrait (Home preview, Founder page) | Resized to 900px, WebP q82, metadata stripped |
 | 03-FOUNDER/in-action/1787798519400.jpg | founder-in-practice.webp | Founder in practice (Founder page) | Auto-oriented, resized to 1000px, WebP q82, metadata stripped |
-| 04-TRAINING-DOCUMENTATION/participant-interaction/1787798199563.jpg | training-participant-interaction.webp | Training evidence (Experience page) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
-| 04-TRAINING-DOCUMENTATION/landscape/1787797905531.jpg | training-facilitation.webp | Delivery evidence (Solutions page) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
-| 05-SELECTED-ENGAGEMENTS/delta-mate/1787798519260.jpg | delta-mate-training.webp | Delta Mate session photo (Home selected engagement) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
-| 05-SELECTED-ENGAGEMENTS/delta-mate/WhatsApp Image 2026-09-03 at 11.36.47.jpeg | delta-mate-engagement-evidence.webp | Delta Mate partnership plaque (Home selected engagement) | Auto-oriented, resized to 850px, WebP q82, metadata stripped |
+| 03-FOUNDER/in-action/1787798519603.jpg | founder-coaching-session.webp | Founder one-to-one coaching (Home preview, Founder page) | Auto-oriented, resized to 1000px, WebP q82, metadata stripped |
+| 04-TRAINING-DOCUMENTATION/participant-interaction/1787798199563.jpg | training-participant-interaction.webp | Transformation workshop interaction (Solutions explorer) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
+| 04-TRAINING-DOCUMENTATION/participant-interaction/1787798199612.jpg | training-group-discussion.webp | Learning program discussion (Solutions explorer, Experience trio) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
+| 04-TRAINING-DOCUMENTATION/landscape/1787797905531.jpg | training-facilitation.webp | Delivery evidence (Solutions page support) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
+| 04-TRAINING-DOCUMENTATION/landscape/1787797905545.jpg | training-classroom-wide.webp | Documentary lead frame (Solutions explorer, Experience showcase) | Auto-oriented, resized to 1400px, WebP q82, metadata stripped |
+| 04-TRAINING-DOCUMENTATION/portrait/1787797905705.jpg | training-small-group.webp | Assessment working session (Solutions explorer, Experience trio) | Auto-oriented, resized to 800px, WebP q82, metadata stripped |
+| 05-SELECTED-ENGAGEMENTS/delta-mate/1787798519260.jpg | delta-mate-training.webp | Delta Mate session photo (documentary grid) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
+| 05-SELECTED-ENGAGEMENTS/delta-mate/1787798879225.jpg | delta-mate-group-photo.webp | Delta Mate cohort with certificates (documentary lead, Experience page) | Auto-oriented, resized to 1200px, WebP q82, metadata stripped |
+| 05-SELECTED-ENGAGEMENTS/delta-mate/WhatsApp Image 2026-09-03 at 11.36.47.jpeg | delta-mate-engagement-evidence.webp | Founder with appreciation plaque (documentary evidence) | Auto-oriented, resized to 850px, WebP q82, metadata stripped |
+| 05-SELECTED-ENGAGEMENTS/delta-mate/WhatsApp Image 2026-08-29 at 20.01.57.jpeg | delta-mate-plaque.webp | Partnership plaque, boxed (documentary evidence) | Auto-oriented, resized to 800px, WebP q82, metadata stripped |
+| 05-SELECTED-ENGAGEMENTS/delta-mate/Teks paragraf Anda.png | delta-mate-certificate.webp | Program Certificate of Completion 2026, shown selectively at reduced size (documentary evidence) | Resized to 900px, WebP q82, metadata stripped |
+| 04-TRAINING-DOCUMENTATION/participant-interaction/1787798199647.jpg | delta-mate-discussion.webp | Program discussion, Delta-watermarked source (documentary grid) | Auto-oriented, resized to 1000px, WebP q82, metadata stripped |
+| 06-PROFESSIONAL-ENGAGEMENT-LOGOS/ (5 supplied marks) | logos/logo-*.webp | Professional engagements logo cells (names as pictured) | Resized ≤500px, WebP q88, metadata stripped |
 | 01-BRAND/01-TRIVENT-LOGO/trivent-logo-transparent.png | trivent-logo.png | Header + footer brand mark (both themes) | Copied unchanged (already web-optimized PNG) |
 | 01-BRAND/03-TRIVENT-BRAND-ASSETS/favicon.svg | trivent-favicon.svg | Favicon (static fallback, both themes) | Copied unchanged |
-| 08-MOTION-VIDEO/brand-intro/gemini_generated_video_2f5602c9.mp4 | trivent-brand-intro.mp4 | One-time brand intro overlay (muted, contained 16:9 frame, ~3.4s, once per session) | Copied unchanged — no ffmpeg on build machine, so no re-encode/trim; playback is muted/inline and JS-capped at ~3.4s with poster fallback |
+| 08-MOTION-VIDEO/brand-intro/gemini_generated_video_2f5602c9.mp4 | trivent-brand-intro.mp4 | One-time brand intro overlay (muted, contained 16:9 frame, ~3.5s, once per session) | Trimmed 0.3s→3.5s (logo lockup settles ~3s, tail hold removed), audio stripped, 960×540 H.264 CRF26 faststart, metadata cleared: 2.9MB → ~300KB |
+| 08-MOTION-VIDEO/brand-intro/gemini_generated_video_2f5602c9.mp4 @ ~3.0s | trivent-brand-intro-poster.jpg | Brand intro poster + preload fallback (actual brand frame, not a training photo) | Single frame extract, 960px, metadata cleared |
 
-Image derivatives are generated by `npm run process-assets`. Raw source and curated originals remain untouched. No client spreadsheets, participant data, or certificate PDFs are bundled. All production WebP files are EXIF/GPS-stripped (sharp `withMetadata({})`).
+Image derivatives are generated by `npm run process-assets`. Raw source and curated originals remain untouched. No client spreadsheets, participant data, or certificate PDFs are bundled. All production WebP files are EXIF/GPS-stripped — the pipeline never calls sharp `withMetadata()`, verified with zero EXIF tags across all outputs.

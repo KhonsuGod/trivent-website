@@ -1,9 +1,9 @@
-import { Plus } from 'lucide-react';
-import { processSteps, solutions } from '../data/company';
+import { processSteps } from '../data/company';
 import { FinalCta } from '../components/FinalCta';
-import { Reveal } from '../components/Reveal';
+import { ImageReveal, Reveal } from '../components/Reveal';
 import { SectionHead } from '../components/SectionHead';
 import { Seo } from '../components/Seo';
+import { SolutionExplorer } from '../components/SolutionExplorer';
 
 export function Solutions() {
   return (
@@ -16,32 +16,31 @@ export function Solutions() {
       <div className="page-hero">
         <div className="container">
           <SectionHead
+            level={1}
             index="S"
             eyebrow="Our Solutions"
             title="Integrated human & business solutions."
-            lede="We don't just solve problems. We build sustainable solutions that transform people and organizations. Open any line to see its full official service list — every item is usable without hover."
+            lede="We don't just solve problems. We build sustainable solutions that transform people and organizations. Select any line — the detail and supporting photography update alongside it."
             backToHome
           />
         </div>
       </div>
 
-      <section className="section" aria-label="Solution details">
+      <section className="section" aria-label="Solution explorer">
         <div className="container">
-          <div className="two-col" style={{ marginBottom: 40 }}>
+          <Reveal>
+            <SolutionExplorer />
+          </Reveal>
+          <div className="two-col" style={{ marginTop: 48 }}>
             <Reveal>
-              <figure className="frame-photo" style={{ margin: 0 }}>
-                <img
-                  src="/assets/training-facilitation.webp"
-                  alt="TRIVENT training session in progress, supporting the solutions delivered to organizations"
-                  width={1200}
-                  height={675}
-                  loading="lazy"
-                />
-                <figcaption className="photo-caption">
-                  <strong>Delivery</strong>
-                  Solutions delivered through real facilitation and implementation support.
-                </figcaption>
-              </figure>
+              <ImageReveal
+                src="/assets/training-facilitation.webp"
+                alt="TRIVENT training session in progress, supporting the solutions delivered to organizations"
+                width={1200}
+                height={675}
+                kicker="Delivery"
+                caption="Solutions delivered through live facilitation and implementation support."
+              />
             </Reveal>
             <Reveal delay={0.08}>
               <p className="eyebrow">How delivery works</p>
@@ -57,33 +56,6 @@ export function Solutions() {
               </ol>
             </Reveal>
           </div>
-
-          {solutions.map((solution, i) => (
-            <Reveal key={solution.title} delay={i * 0.03}>
-              <details className="sol-detail" open={i === 0} name="trivent-solutions">
-                <summary>
-                  <span className="sol-index" aria-hidden="true">
-                    {solution.index}
-                  </span>
-                  <span>
-                    <span className="sol-tag">{solution.tagline}</span>
-                    <h3>{solution.title}</h3>
-                  </span>
-                  <span className="sol-plus" aria-hidden="true">
-                    <Plus />
-                  </span>
-                </summary>
-                <div className="sol-detail-body">
-                  <p>{solution.summary}</p>
-                  <ul className="sol-items" aria-label={`Services in ${solution.title}`}>
-                    {solution.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </details>
-            </Reveal>
-          ))}
         </div>
       </section>
 

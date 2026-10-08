@@ -27,6 +27,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     } catch {
       /* storage unavailable — theme still applies for this session */
     }
+    // Theme-aware favicon: static fallback always exists in markup.
+    const icon = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
+    if (icon) {
+      icon.href = theme === 'light' ? '/assets/trivent-favicon-light.svg' : '/assets/trivent-favicon.svg';
+    }
   }, [theme]);
 
   const toggleTheme = useCallback(() => {

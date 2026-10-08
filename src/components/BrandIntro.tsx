@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 const SEEN_KEY = 'trivent-intro-seen';
-const INTRO_RUN_MS = 3400;
+const INTRO_RUN_MS = 3500;
 
 /** Brand intro overlay: canonical 16:9 logo reveal in a contained editorial
  *  frame (never stretched over mobile). Non-blocking — the site is already
@@ -73,7 +73,7 @@ export function BrandIntro() {
           playsInline
           autoPlay
           preload="auto"
-          poster="/assets/hero-facilitation-desktop.webp"
+          poster="/assets/trivent-brand-intro-poster.jpg"
           aria-label="TRIVENT logo reveal animation"
         >
           <source src="/assets/trivent-brand-intro.mp4" type="video/mp4" />

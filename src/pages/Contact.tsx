@@ -17,6 +17,7 @@ export function Contact() {
       <div className="page-hero">
         <div className="container">
           <SectionHead
+            level={1}
             index="C"
             eyebrow="Contact · Start a Conversation"
             title={company.closingLine}
@@ -55,13 +56,13 @@ export function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href={company.siteUrl} target="_blank" rel="noreferrer">
+                  <span className="channel-static">
                     <Linkedin aria-hidden="true" />
                     <span>
                       {company.linkedinLabel}
                       <small>LinkedIn — professional presence</small>
                     </span>
-                  </a>
+                  </span>
                 </li>
                 <li>
                   <span style={{ display: 'flex', gap: 14, alignItems: 'center', background: 'var(--surface-secondary)', padding: '16px 20px', fontWeight: 600, fontSize: '0.95rem' }}>

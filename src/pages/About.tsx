@@ -16,6 +16,7 @@ export function About() {
       <div className="page-hero">
         <div className="container">
           <SectionHead
+            level={1}
             index="A"
             eyebrow="About TRIVENT"
             title="A Human & Business Transformation Company."
@@ -85,7 +86,7 @@ export function About() {
           <div className="values-grid">
             <Reveal className="value-block value-block--lead">
               <span className="value-letter" aria-hidden="true">
-                T
+                07
               </span>
               <div>
                 <h3 id="about-values">TRIVENT, spelled out</h3>
@@ -97,7 +98,7 @@ export function About() {
                 </p>
               </div>
             </Reveal>
-            {companyValues.slice(1).map((value, i) => (
+            {companyValues.map((value, i) => (
               <Reveal key={value.letter} delay={(i % 2) * 0.06}>
                 <article className="value-block">
                   <span className="value-letter" aria-hidden="true">

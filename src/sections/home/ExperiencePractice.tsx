@@ -1,55 +1,31 @@
 import { Link } from 'react-router-dom';
-import { experienceAreas, processSteps } from '../../data/company';
-import { SectionHead } from '../../components/SectionHead';
+import { ExperienceShowcase } from '../ExperienceShowcase';
 import { Reveal } from '../../components/Reveal';
 
 export function ExperiencePractice() {
   return (
     <section className="section tone-ivory" aria-labelledby="experience-practice-title">
       <div className="container">
-        <SectionHead
-          index="04"
-          eyebrow="Experience in Practice"
-          title="Built through real organizational challenges."
-          lede="Practical solutions and measurable improvements — organized in four experience lines, delivered through one disciplined process."
-          wide
-        />
-        <div>
-          {experienceAreas.map((area, i) => (
-            <Reveal key={area.index} delay={i * 0.04}>
-              <article className="xp-block">
-                <div className="xp-head">
-                  <span className="xp-num" aria-hidden="true">
-                    {area.index}
-                  </span>
-                  <h3 id={i === 0 ? 'experience-practice-title' : undefined}>{area.title}</h3>
-                </div>
-                <div>
-                  <p className="xp-focus">{area.focus}</p>
-                  <ul className="scope-tags" aria-label={`Scope of ${area.title}`}>
-                    {area.scope.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
-            </Reveal>
-          ))}
+        <div className="showcase-head">
+          <Reveal>
+            <p className="eyebrow">Experience in Practice</p>
+            <h2 id="experience-practice-title">
+              The work happens <span className="accent-word">in real rooms</span>, with real
+              people.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="sec-lede">
+              Built through real organizational challenges, practical solutions, and
+              measurable improvements — photographed where it happens.
+            </p>
+          </Reveal>
         </div>
+        <ExperienceShowcase />
         <Reveal delay={0.08}>
-          <div className="process-strip" role="list" aria-label="TRIVENT delivery process">
-            {processSteps.map((step, i) => (
-              <div className="step" role="listitem" key={step}>
-                <span className="step-num">{String(i + 1).padStart(2, '0')}</span>
-                {step}
-              </div>
-            ))}
-          </div>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p style={{ marginTop: 22 }}>
-            <Link className="back-link" to="/experience" aria-label="See full experience and selected engagement">
-              Full experience &amp; selected engagement →
+          <p style={{ marginTop: 26 }}>
+            <Link className="back-link" to="/experience" aria-label="See full experience and professional engagements">
+              Full experience &amp; professional engagements →
             </Link>
           </p>
         </Reveal>

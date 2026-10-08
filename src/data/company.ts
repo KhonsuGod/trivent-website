@@ -28,6 +28,8 @@ export type Solution = {
   title: string;
   tagline: string;
   summary: string;
+  image: string;
+  imageAlt: string;
   items: string[];
 };
 
@@ -38,6 +40,8 @@ export const solutions: Solution[] = [
     tagline: 'Strategic counsel, practical implementation',
     summary:
       'Helping organizations improve business performance through strategic consulting and practical implementation.',
+    image: '/assets/training-classroom-wide.webp',
+    imageAlt: 'A full classroom of participants during a TRIVENT consulting-related training session',
     items: [
       'Human Resources Management',
       'Organization Development',
@@ -55,6 +59,8 @@ export const solutions: Solution[] = [
     tagline: 'Leaders and teams, built in practice',
     summary:
       'Developing leaders and employees through practical and impactful learning experiences.',
+    image: '/assets/training-group-discussion.webp',
+    imageAlt: 'Participants in small-group discussion during a TRIVENT learning program',
     items: [
       'Leadership Development Program',
       'Supervisory Development',
@@ -72,6 +78,8 @@ export const solutions: Solution[] = [
     tagline: 'Objective reads before decisions',
     summary:
       'Providing objective assessments to support organizational development.',
+    image: '/assets/training-small-group.webp',
+    imageAlt: 'A focused small-group working session during a TRIVENT program',
     items: [
       'Competency Assessment',
       'Leadership Assessment',
@@ -89,6 +97,8 @@ export const solutions: Solution[] = [
     tagline: 'Sustainable growth, operational excellence',
     summary:
       'Supporting organizations in achieving sustainable growth and operational excellence.',
+    image: '/assets/training-participant-interaction.webp',
+    imageAlt: 'Participant interaction during a TRIVENT transformation workshop',
     items: [
       'Organizational Transformation',
       'Culture Transformation',
@@ -193,6 +203,20 @@ export const engagements: Engagement[] = [
 
 export const engagementDisclaimer =
   'The following organizations represent selected organizations where the Founder has contributed through professional engagements throughout his career. These contributions include consulting, leadership development, organizational transformation, corporate training, and strategic Human Resources initiatives across various industries.';
+
+export type EngagementLogo = {
+  file: string;
+  /** Name exactly as pictured in the supplied logo file. */
+  picturedName: string;
+};
+
+export const engagementLogos: EngagementLogo[] = [
+  { file: '/assets/logos/logo-delta-mate.webp', picturedName: 'PT Delta Mate' },
+  { file: '/assets/logos/logo-dragon-pack.webp', picturedName: 'PT Dragon Pack' },
+  { file: '/assets/logos/logo-guccitex.webp', picturedName: 'PT Guccitex' },
+  { file: '/assets/logos/logo-pan-brothers.webp', picturedName: 'PT Pan Brothers Tbk' },
+  { file: '/assets/logos/logo-trio-rasa-mas.webp', picturedName: 'PT Trio Rasa Mas' },
+];
 
 export type Industry = { name: string; copy: string };
 

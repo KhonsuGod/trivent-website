@@ -50,8 +50,7 @@ export function SiteFooter() {
               </a>
               <a href={`mailto:${company.email}`}>{company.email}</a>
               <span>{company.website}</span>
-              <span>LinkedIn: {company.linkedinLabel}</span>
-            </address>
+              <span>LinkedIn: {company.linkedinLabel}</span>            </address>
           </div>
         </div>
 

@@ -1,44 +1,50 @@
-import { SectionHead } from '../../components/SectionHead';
+import { Link } from 'react-router-dom';
 import { Reveal } from '../../components/Reveal';
 
-const blocks = [
+const statements = [
   {
-    num: 'P—01',
-    title: 'Humanizing People',
-    copy: 'People are the heart of every successful organization.',
+    text: 'Humanizing People',
+    def: 'People are the heart of every successful organization.',
   },
   {
-    num: 'P—02',
-    title: 'Strengthening Organizations',
-    copy: 'Strong organizations are built through great leadership, culture, and systems.',
+    text: 'Strengthening Organizations',
+    def: 'Strong organizations are built through great leadership, culture, and systems.',
   },
   {
-    num: 'P—03',
-    title: 'Creating Impact',
-    copy: 'Every transformation must deliver measurable value and lasting results.',
+    text: 'Creating Impact',
+    def: 'Every transformation must deliver measurable value and lasting results.',
   },
 ];
 
+/** Philosophy as a typographic statement — oversized lines, staggered clip
+ *  reveals, definitions set small to the side. No boxes. */
 export function Philosophy() {
   return (
-    <section className="section" aria-labelledby="philosophy-title">
+    <section className="section philosophy" aria-labelledby="philosophy-title">
       <div className="container">
-        <SectionHead
-          index="01"
-          eyebrow="Our Philosophy"
-          title="One philosophy. One commitment. One TRIVENT."
-        />
-        <div className="philo-grid">
-          {blocks.map((block, i) => (
-            <Reveal key={block.num} delay={i * 0.07}>
-              <article className="philo-block" aria-label={block.title}>
-                <span className="philo-num">{block.num}</span>
-                <h3 id={i === 0 ? 'philosophy-title' : undefined}>{block.title}</h3>
-                <p>{block.copy}</p>
-              </article>
-            </Reveal>
+        <Reveal>
+          <p className="eyebrow">Our Philosophy</p>
+        </Reveal>
+        <h2 id="philosophy-title" className="philo-statement">
+          {statements.map((item, i) => (
+            <span className="philo-line" key={item.text}>
+              <Reveal variant="clip" delay={i * 0.1}>
+                <span className="philo-text">{item.text}</span>
+              </Reveal>
+              <Reveal delay={0.15 + i * 0.1}>
+                <span className="philo-def">{item.def}</span>
+              </Reveal>
+            </span>
           ))}
-        </div>
+        </h2>
+        <Reveal delay={0.2}>
+          <p className="philo-foot">
+            One philosophy. One commitment. One TRIVENT.{' '}
+            <Link className="back-link" to="/about" style={{ display: 'inline-flex' }}>
+              How it shapes our vision →
+            </Link>
+          </p>
+        </Reveal>
       </div>
     </section>
   );
