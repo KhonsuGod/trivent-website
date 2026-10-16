@@ -35,7 +35,7 @@ export function Founder() {
                 src="/assets/founder-principal-consultant.webp"
                 alt="Studio portrait of Chandra B. Zain, Founder and Principal Consultant of TRIVENT Business Solutions"
                 width={900}
-                height={1020}
+                height={1200}
                 eager
                 kicker="Principal"
                 caption={founder.displayName}
@@ -44,7 +44,7 @@ export function Founder() {
                 src="/assets/founder-coaching-session.webp"
                 alt="Chandra B. Zain coaching a participant one-to-one during a session"
                 width={1000}
-                height={625}
+                height={1778}
                 className="founder-photo-second"
                 kicker="In Practice"
                 caption="One-to-one coaching during a live session."
@@ -53,7 +53,7 @@ export function Founder() {
                 src="/assets/founder-in-practice.webp"
                 alt="The Founder facilitating a training session in the field"
                 width={1000}
-                height={625}
+                height={1778}
                 className="founder-photo-second"
                 kicker="Facilitation"
                 caption="Facilitation in the field."

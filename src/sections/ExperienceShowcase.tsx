@@ -30,7 +30,7 @@ export function ExperienceShowcase({ withProcess = true }: { withProcess?: boole
             src="/assets/training-small-group.webp"
             alt="Participants leaning in during a small-group discussion exercise"
             width={800}
-            height={1000}
+            height={1422}
             kicker="Interaction"
             caption="Small-group discussion — participants working through material together."
           />

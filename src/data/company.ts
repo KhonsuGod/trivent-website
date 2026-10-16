@@ -78,8 +78,8 @@ export const solutions: Solution[] = [
     tagline: 'Objective reads before decisions',
     summary:
       'Providing objective assessments to support organizational development.',
-    image: '/assets/training-small-group.webp',
-    imageAlt: 'A focused small-group working session during a TRIVENT program',
+    image: '/assets/training-facilitation.webp',
+    imageAlt: 'A TRIVENT assessment-related working session in progress',
     items: [
       'Competency Assessment',
       'Leadership Assessment',

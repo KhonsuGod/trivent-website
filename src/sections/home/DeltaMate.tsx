@@ -46,7 +46,7 @@ export function DeltaMate() {
               src="/assets/delta-mate-training.webp"
               alt="Facilitated training session at the PT Delta Mate program"
               width={1200}
-              height={750}
+              height={675}
               kicker="Session"
               caption="Facilitated training at the PT Delta Mate program."
             />
@@ -56,7 +56,7 @@ export function DeltaMate() {
               src="/assets/delta-mate-discussion.webp"
               alt="Participants in discussion during the PT Delta Mate program"
               width={1000}
-              height={625}
+              height={563}
               kicker="Discussion"
               caption="Participant discussion during the program."
             />
@@ -80,7 +80,7 @@ export function DeltaMate() {
                 src="/assets/delta-mate-plaque.webp"
                 alt="Appreciation plaque for the strategic partnership between PT Delta Mate and TRIVENT"
                 width={800}
-                height={1000}
+                height={1067}
                 kicker="Partnership"
                 caption="Appreciation plaque for the strategic partnership."
               />
@@ -90,7 +90,7 @@ export function DeltaMate() {
                 src="/assets/delta-mate-engagement-evidence.webp"
                 alt="Founder Chandra B. Zain holding the appreciation plaque from the PT Delta Mate program"
                 width={850}
-                height={1020}
+                height={1133}
                 kicker="Recognition"
                 caption="Chandra B. Zain with the appreciation plaque from the program."
               />

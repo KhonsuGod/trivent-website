@@ -668,14 +668,11 @@ a {
   background: var(--accent);
 }
 
+/* Framed photos keep their natural ratio — never cropped by default.
+   Fixed aspects are set only per-placement where the source matches. */
 .frame-photo img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.frame-photo--portrait img {
-  aspect-ratio: 3 / 3.4;
+  height: auto;
 }
 
 .photo-caption {
