@@ -32,6 +32,14 @@ const images: Array<[source: string, output: string, width: number]> = [
   ['05-SELECTED-ENGAGEMENTS/delta-mate/WhatsApp Image 2026-08-29 at 20.01.57.jpeg', 'delta-mate-plaque.webp', 800],
   ['05-SELECTED-ENGAGEMENTS/delta-mate/Teks paragraf Anda.png', 'delta-mate-certificate.webp', 900],
   ['04-TRAINING-DOCUMENTATION/participant-interaction/1787798199647.jpg', 'delta-mate-discussion.webp', 1000],
+  // Camiloplas selected engagement (curated: facilitation, presenter, group)
+  ['05-SELECTED-ENGAGEMENTS/pt.camiloplas-jaya-makmur/PHOTO-2026-10-08-22-02-40.jpg', 'camiloplas-facilitation.webp', 1200],
+  ['05-SELECTED-ENGAGEMENTS/pt.camiloplas-jaya-makmur/PHOTO-2026-10-08-22-03-16.jpg', 'camiloplas-session.webp', 900],
+  ['05-SELECTED-ENGAGEMENTS/pt.camiloplas-jaya-makmur/PHOTO-2026-10-08-22-03-24.jpg', 'camiloplas-group.webp', 1200],
+  // Trio Rasa Mas selected engagement (curated: outdoor briefing, indoor session, factory group)
+  ['05-SELECTED-ENGAGEMENTS/trio-rasa-mas/pt-trio-rasa-mas/PHOTO-2026-10-08-22-30-51(16).jpg', 'trio-rasa-mas-briefing.webp', 1200],
+  ['05-SELECTED-ENGAGEMENTS/trio-rasa-mas/pt-trio-rasa-mas/PHOTO-2026-10-08-22-30-51(17).jpg', 'trio-rasa-mas-session.webp', 1200],
+  ['05-SELECTED-ENGAGEMENTS/trio-rasa-mas/pt-trio-rasa-mas/PHOTO-2026-10-08-22-30-51(6).jpg', 'trio-rasa-mas-group.webp', 1200],
 ]
 
 const logos: Array<[source: string, output: string, width: number]> = [

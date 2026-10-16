@@ -88,11 +88,11 @@ export function DeltaMate() {
             <Reveal delay={0.1}>
               <ImageReveal
                 src="/assets/delta-mate-engagement-evidence.webp"
-                alt="Founder Chandra B. Zain holding the appreciation plaque from the PT Delta Mate program"
+                alt="Mr. Kim, President Director of PT Delta Mate, holding the appreciation plaque from the program"
                 width={850}
                 height={1133}
                 kicker="Recognition"
-                caption="Chandra B. Zain with the appreciation plaque from the program."
+                caption="Mr. Kim — President Director of PT Delta Mate — with the appreciation plaque from the program."
               />
             </Reveal>
           </div>

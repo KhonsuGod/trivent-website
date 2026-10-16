@@ -1,4 +1,5 @@
 import { DeltaMate } from '../sections/home/DeltaMate';
+import { EngagementHighlights } from '../sections/home/EngagementHighlights';
 import { Engagements } from '../sections/home/Engagements';
 import { ExperiencePractice } from '../sections/home/ExperiencePractice';
 import { FounderPreview } from '../sections/home/FounderPreview';
@@ -24,6 +25,7 @@ export function Home() {
       <WhyTrivent />
       <ExperiencePractice />
       <DeltaMate />
+      <EngagementHighlights />
       <Industries />
       <FounderPreview />
       <Engagements />

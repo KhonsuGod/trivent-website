@@ -2234,7 +2234,8 @@ a {
   }
 
   .delta-doc-grid,
-  .delta-evidence-row {
+  .delta-evidence-row,
+  .highlight-duo {
     grid-template-columns: 1fr;
   }
 
@@ -2363,6 +2364,41 @@ a {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
+}
+
+/* ---------- engagement highlights ---------- */
+
+.highlight-list {
+  display: grid;
+  gap: clamp(28px, 4vw, 56px);
+}
+
+.highlight-panel {
+  border: 1px solid var(--border-soft);
+  background: var(--surface-secondary);
+  padding: clamp(22px, 3vw, 40px);
+}
+
+.highlight-panel h3 {
+  margin-top: 12px;
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+  max-width: 24ch;
+}
+
+.highlight-panel .frame-photo {
+  margin-top: 22px;
+}
+
+.highlight-duo {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(18px, 2.5vw, 32px);
+  margin-top: clamp(18px, 2.5vw, 32px);
+  align-items: start;
+}
+
+.highlight-panel .evidence-note {
+  margin-top: 22px;
 }
 
 /* ---------- misc motion + channel polish ---------- */
